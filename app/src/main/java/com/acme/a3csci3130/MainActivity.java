@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 
 
     private ListView contactListView;
-    private FirebaseListAdapter<Contact> firebaseAdapter;
+    private FirebaseListAdapter <Contact> firebaseAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
