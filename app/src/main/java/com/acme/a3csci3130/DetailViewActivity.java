@@ -41,7 +41,6 @@ public class DetailViewActivity extends Activity {
         String province=provinceField.getText().toString();
         Contact person =new Contact(uid,name,number,primary,address,province);
         appState.firebaseReference.child(uid).setValue(person);
-        Toast.makeText(DetailViewActivity.this,"Updated",Toast.LENGTH_SHORT).show();
         finish();
     }
 
