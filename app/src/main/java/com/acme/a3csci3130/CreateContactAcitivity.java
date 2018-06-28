@@ -6,9 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 public class CreateContactAcitivity extends Activity {
 
-    private Button submitButton;
     private EditText nameField, addField,provinceField,numberField,primaryField;
     private MyApplicationData appState;
 
@@ -18,7 +18,6 @@ public class CreateContactAcitivity extends Activity {
         setContentView(R.layout.activity_create_contact_acitivity);
         //Get the app wide shared variables
         appState = ((MyApplicationData) getApplicationContext());
-        submitButton = (Button) findViewById(R.id.submitButton);
         nameField = (EditText) findViewById(R.id.name);
         numberField=(EditText)findViewById(R.id.number);
         primaryField=(EditText) findViewById(R.id.primary);

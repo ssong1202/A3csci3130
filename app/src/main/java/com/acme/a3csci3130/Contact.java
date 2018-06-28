@@ -1,7 +1,7 @@
 package com.acme.a3csci3130;
 
 import com.google.firebase.database.Exclude;
-import com.google.firebase.database.IgnoreExtraProperties;
+
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -17,6 +17,9 @@ public class Contact implements Serializable {
     public  String uid;
     public  String name;
     public  String address, province,primary,number;
+    public Contact(){
+
+    }
     public Contact(String uid, String number, String name, String primary, String address, String province) {
         this.uid=uid;
         this.number=number;
