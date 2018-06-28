@@ -8,17 +8,22 @@ import android.widget.EditText;
 
 
 public class CreateContactAcitivity extends Activity {
-
+    private Button submitButton;
     private EditText nameField, addField,provinceField,numberField,primaryField;
     private MyApplicationData appState;
 
     @Override
+    /**
+     * the create contact acitivity
+     * Shengnan
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_contact_acitivity);
         //Get the app wide shared variables
         appState = ((MyApplicationData) getApplicationContext());
         nameField = (EditText) findViewById(R.id.name);
+        submitButton=(Button)findViewById(R.id.submitButton3);
         numberField=(EditText)findViewById(R.id.number);
         primaryField=(EditText) findViewById(R.id.primary);
         addField=(EditText) findViewById(R.id.address);

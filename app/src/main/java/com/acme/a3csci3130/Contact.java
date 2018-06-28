@@ -20,7 +20,11 @@ public class Contact implements Serializable {
     public Contact(){
 
     }
-    public Contact(String uid, String number, String name, String primary, String address, String province) {
+    /**
+     * Contact method to contact the information and person
+     * Shengnan
+     */
+    public Contact(String uid, String name, String number, String primary, String address, String province) {
         this.uid=uid;
         this.number=number;
         this.name=name;
