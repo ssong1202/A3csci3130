@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="number" type="id">int</item>
+    <item name="primary" type="id" />
+    <item name="address" type="id" />
+    <item name="province" type="id" />
+</resources>
