@@ -15,14 +15,23 @@ import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard
 import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.anything;
+
 /**
  * Test the update button Shengnan
- *
  */
 @RunWith(AndroidJUnit4.class)
 public class UpdateTest {
+    /**
+     * The M activity rule.
+     */
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule=new ActivityTestRule<>(MainActivity.class);
+
+    /**
+     * Update data.
+     *
+     * @throws InterruptedException the interrupted exception
+     */
     @Test
     public void updateData() throws InterruptedException {
         Thread.sleep(5000);

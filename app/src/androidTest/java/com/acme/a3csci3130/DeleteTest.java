@@ -14,15 +14,23 @@ import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.hamcrest.Matchers.anything;
+
 /**
  * Test th delete button Shengnan
- *
  */
 @RunWith(AndroidJUnit4.class)
 public class DeleteTest {
+    /**
+     * The M activity rule.
+     */
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule=new ActivityTestRule<>(MainActivity.class);
 
+    /**
+     * Delete.
+     *
+     * @throws InterruptedException the interrupted exception
+     */
     @Test
     public void delete() throws InterruptedException {
         Thread.sleep(5000);

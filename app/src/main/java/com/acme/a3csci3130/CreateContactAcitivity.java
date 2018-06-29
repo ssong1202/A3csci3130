@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
+/**
+ * The type Create contact acitivity.
+ */
 public class CreateContactAcitivity extends Activity {
     private Button submitButton;
     private EditText nameField, addField,provinceField,numberField,primaryField;
@@ -30,6 +33,11 @@ public class CreateContactAcitivity extends Activity {
         provinceField=(EditText)findViewById(R.id.province);
     }
 
+    /**
+     * Submit info button.
+     *
+     * @param v the v
+     */
     public void submitInfoButton(View v) {
         //each entry needs a unique ID
         String personID = appState.firebaseReference.push().getKey();

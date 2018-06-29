@@ -17,6 +17,9 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
+/**
+ * The type Create contact test.
+ */
 @RunWith(AndroidJUnit4.class)
 @LargeTest
 /**
@@ -24,9 +27,19 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
  *
  */
 public class CreateContactTest {
+    /**
+     * The Test.
+     */
     public String test;
+    /**
+     * The M activity rule.
+     */
     @Rule
     public ActivityTestRule<MainActivity> mActivityRule=new ActivityTestRule<>(MainActivity.class);
+
+    /**
+     * Test contact.
+     */
     @Test
     public void testContact(){
         onView(withId(R.id.submitButton)).perform(click());

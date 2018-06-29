@@ -6,8 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+/**
+ * The type Detail view activity.
+ */
 public class DetailViewActivity extends Activity {
     private EditText nameField,numberField,provinceField,addField,primaryField;
+    /**
+     * The Received person info.
+     */
     Contact receivedPersonInfo;
     private MyApplicationData appState;
     @Override
@@ -31,6 +37,11 @@ public class DetailViewActivity extends Activity {
         }
     }
 
+    /**
+     * Update contact.
+     *
+     * @param v the v
+     */
     public void updateContact(View v){
         String uid=receivedPersonInfo.uid;
         String number=numberField.getText().toString();
@@ -43,6 +54,11 @@ public class DetailViewActivity extends Activity {
         finish();
     }
 
+    /**
+     * Erase contact.
+     *
+     * @param v the v
+     */
     public void eraseContact(View v)
     {
       appState.firebaseReference.child(receivedPersonInfo.uid).removeValue();
